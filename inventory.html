@@ -9,15 +9,144 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1><a href="index.html">I Got Your 6</a></h1>
+        <hr>
+        <h2>Inventory</h2>
+    </header>
 
-    <section>
-        <div class="sprite">
+    <main>
+        <div class="tab">
+            <button class="tablinks" id="gear-button">Gear</button>
+            <button class="tablinks" id="inventory-button">Inventory</button>
+            <button class="tablinks" id="storage-button">Storage</button>
         </div>
-    </section>
+        <section id="gear-tab" class="tabcontent">
+            <!--<ul id="gear">-->
+            <ul>
+                <li>
+                    <ul id="weapons">
+                        <li>
+                            <h3>Kinetic</h3>
+                            <ul id="kinetic"></ul>
+                        </li>
+                        <li>
+                            <h3>Energy</h3>
+                            <ul id="energy"></ul>
+                        </li>
+                        <li>
+                            <h3>Power</h3>
+                            <ul id="power"></ul>
+                        </li>
+                        <li>
+                            <h3>Ghost</h3>
+                            <ul id="ghost"></ul>
+                        </li>
+                    </ul>
+                </li>
+                <hr>
+                <li>
+                    <ul id="armor">
+                        <li>
+                            <h3>Helmet</h3>
+                            <ul id="helmet"></ul>
+                        </li>
+                        <li>
+                            <h3>Gauntlets</h3>
+                            <ul id="gauntlets"></ul>
+                        </li>
+                        <li>
+                            <h3>Chest</h3>
+                            <ul id="chest"></ul>
+                        </li>
+                        <li>
+                            <h3>Legs</h3>
+                            <ul id="legs"></ul>
+                        </li>
+                        <li>
+                            <h3>Back</h3>
+                            <ul id="back"></ul>
+                        </li>
+                        <li>
+                            <h3>Clan Banner</h3>
+                            <ul id="banner"></ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="inventory-tab" class="tabcontent">
+            <!--<ul id="inventory">-->
+            <ul>
+                <li>
+                    <h3>Engrams</h3>
+                    <ul id="engrams"></ul>
+                </li>
+                <li>
+                    <h3>Lost Items</h3>
+                    <ul id="lost-items"></ul>
+                </li>
+                <li>
+                    <h3>Consumables</h3>
+                    <ul id="consumables"></ul>
+                </li>
+                <li>
+                    <h3>Modifications</h3>
+                    <ul id="modifications"></ul>
+                </li>
+                <li>
+                    <h3>Shaders</h3>
+                    <ul id="shaders"></ul>
+                </li>
+                <li>
+                    <h3>Emblems</h3>
+                    <ul id="emblems"></ul>
+                </li>
+                <li>
+                    <h3>Auras</h3>
+                    <ul id="auras"></ul>
+                </li>
+                <li>
+                    <h3>Emotes</h3>
+                    <ul id="emotes"></ul>
+                </li>
+                <li>
+                    <h3>Ships</h3>
+                    <ul id="ships"></ul>
+                </li>
+                <li>
+                    <h3>Vehicles</h3>
+                    <ul id="vehicles"></ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="storage-tab" class="tabcontent">
+            <!--<ul id="storage">-->
+            <ul>
+                <li>
+                    <h3>Vault</h3>
+                    <ul id="vault"></ul>
+                </li>
+                <li>
+                    <h3>Collections</h3>
+                    <ul id="collections"></ul>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-
+        <h2>I Got Your 6</h2>
+        <ul class="footer">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="loadouts.html">Loadouts</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <p>Powered by the Destiny API</p>
+        <p>disclaimer</p>
         <script type="text/javascript" src="js/content.js"></script>
     </footer>
 
