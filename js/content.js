@@ -84,7 +84,7 @@ if(window.location.pathname == './loadouts.html') {
 
 //--------Inventory Page [
 
-if(window.location.pathname == './inventory.html') {
+if(window.location.pathname == '../inventory.html') {
 
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	const tablinks = document.getElementsByClassName("tablinks");
