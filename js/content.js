@@ -24,7 +24,7 @@
 //-------Index page [
 if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
 	console.log('hello');
-	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=&response_type=code&state=igotyour6stateparameter';
+	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=https://tracelarson.github.io/IGotYourSix/index.html&response_type=code&state=igotyour6stateparameter';
 
 
 	var myHeaders = new Headers();
