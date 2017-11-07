@@ -29,7 +29,7 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.
 
 	var myHeaders = new Headers();
 	myHeaders.append('X-API-KEY','8d6484be63a845848a9affde4ec9f682');
-	myHeaders.append('Origin','https://tracelarson.github.io');
+	myHeaders.append('Access-Control-Allow-Origin','https://tracelarson.github.io');
 
 
 	var myInit = {
