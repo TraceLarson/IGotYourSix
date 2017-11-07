@@ -24,13 +24,12 @@
 //-------Index page [
 if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
 	console.log('hello');
-	const authUrl = 'https://www.bungie.net/en/oauth/authorize?';
+	const authUrl = 'https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code';
 
 
 	var myHeaders = new Headers();
-	myHeaders.append('response_type', 'code');
-	myHeaders.append('client_id', '22240');
-	myHeaders.append('Origin','https://tracelarson.github.io');
+	myHeaders.append('X-API-KEY','8d6484be63a845848a9affde4ec9f682');
+
 
 	var myInit = {
 		method: 'GET',
