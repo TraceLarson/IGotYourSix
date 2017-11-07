@@ -31,6 +31,7 @@
 	myHeaders.append('response_type', 'code');
 	myHeaders.append('client_id', '22240');
 	myHeaders.append('X-API-KEY','fadb1375f3d346da87ee9e086cf4484c');
+	myHeaders.append('Access-Control-Allow-Origin','https://tracelarson.github.io');
 
 	var myInit = {
 		method: 'GET',
