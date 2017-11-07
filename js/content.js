@@ -22,7 +22,7 @@
 // &state=igotyour6_state_parameter
 
 //-------Index page [
-if(window.location.pathname == './index.html') {
+//if(window.location.pathname == '/index.html') {
 	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=&response_type=code&state=igotyour6stateparameter';
 
 	var myHeaders = new Headers();
@@ -38,16 +38,18 @@ if(window.location.pathname == './index.html') {
 
 	fetch(authUrl, myInit).then((response) =>{
 		console.log(response);
+	}).catch((error)=>{
+		console.log(error);
 	});
 
-}
+//}
 //-------Index page ]
 
 
 
 
 //-------Members Page [
-if(window.location.pathname == './members.html') {
+if(window.location.pathname == '/members.html') {
 
 }
 //-------Members Page ]
@@ -56,7 +58,7 @@ if(window.location.pathname == './members.html') {
 
 
 //-------Profile Page [
-if(window.location.pathname == './profile.html') {
+if(window.location.pathname == '/profile.html') {
 
 }
 //-------Profile Page ]
@@ -65,7 +67,7 @@ if(window.location.pathname == './profile.html') {
 
 
 //-------Join Up Page [
-if(window.location.pathname == './joinup.html') {
+if(window.location.pathname == '/joinup.html') {
 
 }
 //-------Join Up Page ]
@@ -74,7 +76,7 @@ if(window.location.pathname == './joinup.html') {
 
 
 //-------Loadouts Page [
-if(window.location.pathname == './loadouts.html') {
+if(window.location.pathname == '/loadouts.html') {
 
 }
 //-------Loadouts Page ]
@@ -84,7 +86,7 @@ if(window.location.pathname == './loadouts.html') {
 
 //--------Inventory Page [
 
-if(window.location.pathname == '../inventory.html') {
+if(window.location.pathname == '/inventory.html') {
 
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	const tablinks = document.getElementsByClassName("tablinks");
