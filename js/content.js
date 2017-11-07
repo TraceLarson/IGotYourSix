@@ -23,14 +23,12 @@
 
 //-------Index page [
 if(window.location.pathname == '/index.html') {
-	const authUrl = 'https://www.bungie.net/en/OAuth/Authorize';
+	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=&response_type=code&state=igotyour6stateparameter';
 
 	var myHeaders = new Headers();
 	myHeaders.append('response_type', 'code');
 	myHeaders.append('client_id', '22240');
-	myHeaders.append('state','igotyour6_state_parameter');
 	myHeaders.append('X-API-KEY','fadb1375f3d346da87ee9e086cf4484c');
-	myHeaders.append('client_secret', 'LKHkKwTifqlB0KLGdn-0CMH9uOIFCYfmzdjxgLYVHCM');
 
 	var myInit = {
 		method: 'GET',
