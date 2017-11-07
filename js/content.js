@@ -23,7 +23,9 @@
 
 //-------Index page [
 //if(window.location.pathname == '/index.html') {
+	console.log('hello');
 	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=&response_type=code&state=igotyour6stateparameter';
+
 
 	var myHeaders = new Headers();
 	myHeaders.append('response_type', 'code');
