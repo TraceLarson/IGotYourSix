@@ -22,7 +22,7 @@
 // &state=igotyour6_state_parameter
 
 //-------Index page [
-//if(window.location.pathname == '/index.html') {
+if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
 	console.log('hello');
 	const authUrl = 'https://www.bungie.net/en/oauth/authorize?client_id=22240&redirect_uri=&response_type=code&state=igotyour6stateparameter';
 
@@ -45,14 +45,14 @@
 		console.log(error);
 	});
 
-//}
+}
 //-------Index page ]
 
 
 
 
 //-------Members Page [
-if(window.location.pathname == '/members.html') {
+if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/members.html' || 'members.html') {
 
 }
 //-------Members Page ]
@@ -61,7 +61,7 @@ if(window.location.pathname == '/members.html') {
 
 
 //-------Profile Page [
-if(window.location.pathname == '/profile.html') {
+if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/profile.html' || '/profile.html') {
 
 }
 //-------Profile Page ]
@@ -70,7 +70,7 @@ if(window.location.pathname == '/profile.html') {
 
 
 //-------Join Up Page [
-if(window.location.pathname == '/joinup.html') {
+if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/joinup.html' || '/joinup.html') {
 
 }
 //-------Join Up Page ]
@@ -79,7 +79,7 @@ if(window.location.pathname == '/joinup.html') {
 
 
 //-------Loadouts Page [
-if(window.location.pathname == '/loadouts.html') {
+if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/loadouts.html' || '/loadouts.html') {
 
 }
 //-------Loadouts Page ]
