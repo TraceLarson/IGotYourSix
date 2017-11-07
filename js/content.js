@@ -30,7 +30,7 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.
 	var myHeaders = new Headers();
 	myHeaders.append('response_type', 'code');
 	myHeaders.append('client_id', '22240');
-	myHeaders.append('Access-Control-Allow-Origin','https://tracelarson.github.io');
+	myHeaders.append('Origin','https://tracelarson.github.io');
 
 	var myInit = {
 		method: 'GET',
