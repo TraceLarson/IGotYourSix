@@ -24,8 +24,7 @@
 //-------Index page [
 if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
 	console.log('hello');
-	// const authUrl = 'https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code';
-	const authUrl = 'https://www.bungie.net/Platform/Trending/Categories/';
+	const authUrl = 'https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code';
 
 
 	var myHeaders = new Headers();
