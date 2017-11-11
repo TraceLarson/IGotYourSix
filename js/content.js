@@ -12,7 +12,6 @@
 
 // GET /resource HTTP/1.1
 // Authorization: Bearer mF_9.B5f-4.1JqM
-// X-API-Key: 8d6484be63a845848a9affde4ec9f682
 
 
 // X-API-KEY : fadb1375f3d346da87ee9e086cf4484c
@@ -22,15 +21,16 @@
 // &state=igotyour6_state_parameter
 
 //-------Index page [
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
-	console.log('hello');
-	const authUrl = 'https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code';
+if (window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
+
+	const authUrl = 'https://www.bungie.net/en/oauth/authorize?clent_id=22240' +
+		'&response_type=code';
+
+	const authBtn = document.getElementById('auth');
 
 
 	var myHeaders = new Headers();
-	myHeaders.append('X-API-KEY','8d6484be63a845848a9affde4ec9f682');
-	myHeaders.append('Access-Control-Allow-Origin','https://tracelarson.github.io');
-
+	myHeaders.append('X-API-KEY', 'fadb1375f3d346da87ee9e086cf4484c');
 
 	var myInit = {
 		method: 'GET',
@@ -38,11 +38,18 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.
 		mode: 'cors'
 	};
 
-	fetch(authUrl, myInit).then((response) =>{
-		console.log(response);
-	}).catch((error)=>{
-		console.log(error);
+	authBtn.addEventListener('click', () => {
+
+		window.open(authUrl, '_self');
+
+		// fetch(authUrl, myInit).then(() => {
+		// 	window.open(authUrl, '_self');
+		// }).catch((error) => {
+		// 	console.log(error);
+		// });
+
 	});
+
 
 }
 //-------Index page ]
