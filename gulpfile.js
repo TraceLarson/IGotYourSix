@@ -10,12 +10,12 @@ gulp.task('defualt', function() {
 
 
 gulp.task('scss', function () {
-//var processors = [
-//  autoprefixer({browsers: ['last 2 versions']}),
-//];
+var processors = [
+  autoprefixer({browsers: ['last 2 versions']}),
+];
 return gulp.src('./scss/*.scss')
 .pipe(sass())
-//.pipe(postcss(processors))
+.pipe(postcss(processors))
 .pipe(gulp.dest('./css'))
 .pipe(browserSync.reload({
 stream:true
