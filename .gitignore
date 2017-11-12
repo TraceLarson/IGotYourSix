@@ -1,7 +1,5 @@
 node_modules/.bin/browser-sync
-node_modules/.bin/browserslist
-gulpfile.js
-node_modules/.bin/dev-ip
+node_modules/.bin/browserslnode_modules/.bin/dev-ip
 node_modules/.bin/esparse
 node_modules/.bin/esvalidate
 node_modules/.bin/express
