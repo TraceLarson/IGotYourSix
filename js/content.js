@@ -20,16 +20,11 @@
 // &response_type=code
 // &state=igotyour6_state_parameter
 
-import Bungo from './node_modules/bungie-auth/electron';
-
-const bungie = new Bungo({
-	key: 'fadb1375f3d346da87ee9e086cf4484c',
-	url: 'https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code'
-});
 
 
 //-------Index page [
 if (window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
+
 
 
 	const authBtn = document.getElementById('auth');
@@ -45,14 +40,10 @@ if (window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index
 	};
 
 	authBtn.addEventListener('click', () => {
+		
+	window.open('https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code&state=logintest1');
 
-		window.open(authUrl, '_self');
 
-		// fetch(authUrl, myInit).then(() => {
-		// 	window.open(authUrl, '_self');
-		// }).catch((error) => {
-		// 	console.log(error);
-		// });
 
 	});
 
