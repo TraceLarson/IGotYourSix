@@ -48,7 +48,7 @@ gulp.task('watch', ['browser-sync', 'scss'], function () {
 //npm init                              |
 //npm install --save-dev gulp           |
 //touch gulpfile.js                     |
-//npm install gulp-sass --save-dev      |
+//npm install gulp-scss --save-dev      |
 //npm install browser-sync --save-dev   |
 //npm install gulp-postcss autoprefixer |
 //---------------------------------------

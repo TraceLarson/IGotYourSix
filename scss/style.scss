@@ -1,0 +1,44 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import "vars";
+@import "type";
+@import "mixins";
+
+@include font-face(Futurist Fixed-width, css/FUTRFW.woff , null, null, woff);
+@include font-face(Helvetica Neue LT Std 45 Light, fonts/Samplinoff, null, null, woff);
+@include font-face(Adobe Garamond Pro Bold, fonts/Samplinoff, null, null, woff);
+@include font-face(Adobe Garamond Pro Italic, fonts/Samplinoff, null, null, woff);
+
+//@font-face {
+//  font-family: 'Futurist Fixed-width';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Futurist Fixed-width'), url('../css/FUTRFW.woff') format('woff');
+//
+//}
+//
+//@font-face {
+//  font-family: 'Helvetica Neue LT Std 45 Light';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Helvetica Neue LT Std 45 Light'), url('../css/HelveticaNeueLTStd Lt.woff') format('woff');
+//}
+//
+//@font-face {
+//  font-family: 'Adobe Garamond Pro Bold';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Adobe Garamond Pro Bold'), url('../css/AGaramondPro-Bold.woff') format('woff');
+//}
+//
+//@font-face {
+//  font-family: 'Adobe Garamond Pro Italic';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Adobe Garamond Pro Italic'), url('../css/AGaramondPro-Italic.woff') format('woff');
+//}
+
+
+body{
+  background: url('/resources/images/background.jpg') no-repeat center center fixed;
+}
