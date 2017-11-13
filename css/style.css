@@ -1,2 +1,27 @@
+@font-face {
+  font-family: "Futurist Fixed-width";
+  src: url("../fonts/FUTRFW.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std 45 Light";
+  src: url("../fonts/HelveticaNeueLTStd Lt.woff") format("woff"); }
+
+@font-face {
+  font-family: "Adobe Garamond Pro Bold";
+  src: url("../fonts/AGaramondPro-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Adobe Garamond Pro Italic";
+  src: url("../fonts/AGaramondPro-Italic.woff") format("woff"); }
+
 body {
-  background: url("/resources/images/background.jpg") no-repeat center center fixed; }
+  background: url("/resources/images/background.jpg") no-repeat center fixed; }
+
+.splash:nth-child(1) {
+  background: url("/resources/buttons/TitanBanner.png") no-repeat center fixed; }
+
+.splash:nth-child(2) {
+  background: url("/resources/buttons/HunterBanner.png") no-repeat center fixed; }
+
+.splash:nth-child(3) {
+  background: url("/resources/buttons/WarlockBanner.png") no-repeat center fixed; }

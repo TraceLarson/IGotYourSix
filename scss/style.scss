@@ -4,10 +4,10 @@
 @import "type";
 @import "mixins";
 
-@include font-face(Futurist Fixed-width, css/FUTRFW.woff , null, null, woff);
-@include font-face(Helvetica Neue LT Std 45 Light, fonts/Samplinoff, null, null, woff);
-@include font-face(Adobe Garamond Pro Bold, fonts/Samplinoff, null, null, woff);
-@include font-face(Adobe Garamond Pro Italic, fonts/Samplinoff, null, null, woff);
+@include font-face("Futurist Fixed-width", "../fonts/FUTRFW" , null, null, woff);
+@include font-face("Helvetica Neue LT Std 45 Light", "../fonts/HelveticaNeueLTStd Lt", null, null, woff);
+@include font-face("Adobe Garamond Pro Bold", "../fonts/AGaramondPro-Bold", null, null, woff);
+@include font-face("Adobe Garamond Pro Italic", "../fonts/AGaramondPro-Italic", null, null, woff);
 
 //@font-face {
 //  font-family: 'Futurist Fixed-width';
@@ -40,5 +40,20 @@
 
 
 body{
-  background: url('/resources/images/background.jpg') no-repeat center center fixed;
+  background: url('/resources/images/background.jpg') no-repeat center fixed;
+}
+
+.splash{
+  &:nth-child(1){
+    background: url('/resources/buttons/TitanBanner.png') no-repeat center fixed;
+  }
+  &:nth-child(2){
+    background: url('/resources/buttons/HunterBanner.png') no-repeat center fixed;
+
+  }
+  &:nth-child(3){
+    background: url('/resources/buttons/WarlockBanner.png') no-repeat center fixed;
+
+  }
+
 }
