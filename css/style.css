@@ -15,7 +15,11 @@
   src: url("../fonts/AGaramondPro-Italic.woff") format("woff"); }
 
 body {
-  background: url("/resources/images/background.jpg") no-repeat center fixed; }
+  background: url("/resources/images/background.jpg") no-repeat center fixed;
+  color: #F3F0ED; }
+
+button {
+  color: #F3F0ED; }
 
 .indexButton {
   width: 100%;
@@ -29,11 +33,10 @@ body {
     border: none;
     background: url("/resources/buttons/TitanBanner.png") center/cover no-repeat;
     width: 283px;
-    height: 72px; }
+    height: 72px;
+    color: #F3F0ED; }
     .indexButton #i-dashboard:hover {
       border: 1px solid black; }
-    .indexButton #i-dashboard span {
-      color: #F3F0ED; }
   .indexButton #i-joinup {
     border: none;
     background: url("/resources/buttons/HunterBanner.png") center/cover no-repeat;
@@ -41,8 +44,6 @@ body {
     height: 72px; }
     .indexButton #i-joinup:hover {
       border: 1px solid black; }
-    .indexButton #i-joinup span {
-      color: #F3F0ED; }
   .indexButton #i-about {
     border: none;
     background: url("/resources/buttons/WarlockBanner.png") center/cover no-repeat;
@@ -50,8 +51,6 @@ body {
     height: 72px; }
     .indexButton #i-about:hover {
       border: 1px solid black; }
-    .indexButton #i-about span {
-      color: #F3F0ED; }
 
 .title {
   font-family: "Helvetica Neue";

@@ -41,7 +41,20 @@
 
 body{
   background: url('/resources/images/background.jpg') no-repeat center fixed;
+  color: $text-content-color;
 }
+
+button{
+  color: $text-content-color;
+
+}
+
+//--------------------------------------------------------------------
+
+//                       Index Page
+
+//--------------------------------------------------------------------
+
 
 .indexButton{
   width: 100%;
@@ -58,12 +71,10 @@ body{
     background: url('/resources/buttons/TitanBanner.png')center / cover no-repeat;
     width: 283px;
     height: 72px;
+    color: $text-content-color;
+
     &:hover{
       border: 1px solid black;
-    }
-
-    span{
-      color: $text-content-color;
     }
   }
 
@@ -75,10 +86,6 @@ body{
     &:hover{
       border: 1px solid black;
     }
-
-    span{
-      color: $text-content-color;
-    }
   }
 
   #i-about{
@@ -88,10 +95,6 @@ body{
     height: 72px;
     &:hover{
       border: 1px solid black;
-    }
-
-    span{
-      color: $text-content-color;
     }
   }
 

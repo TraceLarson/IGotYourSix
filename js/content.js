@@ -21,7 +21,6 @@
 // &state=igotyour6_state_parameter
 
 
-
 //-------Index page [
 if (window.location.pathname == '/index.html') {
 
@@ -31,28 +30,22 @@ if (window.location.pathname == '/index.html') {
 //-------Index page ]
 
 
-
-
 //-------Members Page [
-if(window.location.pathname == '/members.html') {
+if (window.location.pathname == '/members.html') {
 
 }
 //-------Members Page ]
 
 
-
-
 //-------Profile Page [
-if(window.location.pathname == '/profile.html') {
+if (window.location.pathname == '/profile.html') {
 
 }
 //-------Profile Page ]
 
 
-
-
 //-------Join Up Page [
-if(window.location.pathname == '/joinup.html') {
+if (window.location.pathname == '/joinup.html') {
 
 	overButton();
 
@@ -62,20 +55,16 @@ if(window.location.pathname == '/joinup.html') {
 //-------Join Up Page ]
 
 
-
-
 //-------Loadouts Page [
-if(window.location.pathname == '/loadouts.html') {
+if (window.location.pathname == '/loadouts.html') {
 
 }
 //-------Loadouts Page ]
 
 
-
-
 //--------Inventory Page [
 
-if(window.location.pathname == '/inventory.html') {
+if (window.location.pathname == '/inventory.html') {
 
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	const tablinks = document.getElementsByClassName("tablinks");
@@ -117,42 +106,33 @@ if(window.location.pathname == '/inventory.html') {
 
 
 	}
- }
+}
+
 //----TAB CONTROL ]
-
-
 
 
 function overButton() {
 
-	const buttonContainer = document.getElementsByTagName('button');
+	const button = document.getElementsByTagName('button');
 
-	for(let i = 0; i < buttonContainer.length; i++) {
+	for (let i = 0; i < button.length; i++) {
 
-		buttonContainer[i].addEventListener('mouseover', () => {
-			if(buttonContainer[i].hasChildNodes()) {
-				let buttonText = buttonContainer[i].getElementsByTagName('span');
-				console.log(buttonText);
-				console.log(buttonText[0].innerHTML);
-				buttonText[0].innerHTML = '<u>[' + buttonText[0].innerHTML + ']</u>';
-				console.log(buttonText[0]);
-			}
+		button[i].addEventListener('mouseover', () => {
 
+			let buttonText = button[i].innerHTML;
+			console.log(buttonText);
+			button[i].innerHTML = '<u>[' + buttonText + ']</u>';
+			console.log(buttonText);
 		});
-		buttonContainer[i].addEventListener('mouseout', () => {
-			if(buttonContainer[i].hasChildNodes()) {
-				let buttonText = buttonContainer[i].getElementsByTagName('span');
-				if (buttonText[0].innerHTML.includes('[')) {
-					console.log(buttonText);
-					console.log(buttonText[0].innerHTML);
-					buttonText[0].innerHTML = buttonText[0].innerHTML.replace('<u>[', '').replace(']</u>', '');
-					// buttonText[0].innerHTML = buttonText[0].innerHTML.replace(']</u>', '');
-					console.log(buttonText[0].innerHTML);
-					// navButton[0].innerHTML = buttonText;
+		button[i].addEventListener('mouseout', () => {
 
-				}
+			let buttonText = button[i].innerHTML;
+
+			if (buttonText.includes('[')) {
+				console.log(buttonText);
+				button[i].innerHTML = button[i].innerHTML.replace('<u>[', '').replace(']</u>', '');
+				console.log(button[i].innerHTML);
 			}
-
 		});
 	}
 }
