@@ -17,11 +17,61 @@
 body {
   background: url("/resources/images/background.jpg") no-repeat center fixed; }
 
-.splash:nth-child(1) {
-  background: url("/resources/buttons/TitanBanner.png") no-repeat center fixed; }
+.indexButton {
+  width: 100%;
+  font-family: "Helvetica Neue LT Std 45 Light";
+  font-weight: lighter;
+  font-size: 24px;
+  background: none;
+  padding: 0;
+  border: none; }
+  .indexButton #i-dashboard {
+    border: none;
+    background: url("/resources/buttons/TitanBanner.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px; }
+    .indexButton #i-dashboard:hover {
+      border: 1px solid black; }
+    .indexButton #i-dashboard span {
+      color: #F3F0ED; }
+  .indexButton #i-joinup {
+    border: none;
+    background: url("/resources/buttons/HunterBanner.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px; }
+    .indexButton #i-joinup:hover {
+      border: 1px solid black; }
+    .indexButton #i-joinup span {
+      color: #F3F0ED; }
+  .indexButton #i-about {
+    border: none;
+    background: url("/resources/buttons/WarlockBanner.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px; }
+    .indexButton #i-about:hover {
+      border: 1px solid black; }
+    .indexButton #i-about span {
+      color: #F3F0ED; }
 
-.splash:nth-child(2) {
-  background: url("/resources/buttons/HunterBanner.png") no-repeat center fixed; }
+.title {
+  font-family: "Helvetica Neue";
+  font-weight: lighter; }
 
-.splash:nth-child(3) {
-  background: url("/resources/buttons/WarlockBanner.png") no-repeat center fixed; }
+.form-group {
+  color: #F3F0ED; }
+
+.form-control {
+  font-family: "Futurist Fixed-width";
+  background: #F3F0ED;
+  opacity: 0.4;
+  border: 1px solid #F3F0ED; }
+
+.btn {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 48px;
+  color: #F3F0ED;
+  background: transparent;
+  border: none; }
+  .btn:hover {
+    background: transparent; }

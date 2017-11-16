@@ -23,30 +23,9 @@
 
 
 //-------Index page [
-if (window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index.html' || '/index.html') {
+if (window.location.pathname == '/index.html') {
 
-
-
-	const authBtn = document.getElementById('auth');
-
-
-	var myHeaders = new Headers();
-	myHeaders.append('X-API-KEY', 'fadb1375f3d346da87ee9e086cf4484c');
-
-	var myInit = {
-		method: 'GET',
-		headers: myHeaders,
-		mode: 'cors'
-	};
-
-	authBtn.addEventListener('click', () => {
-		
-	window.open('https://www.bungie.net/en/oauth/authorize?clent_id=22240&response_type=code&state=logintest1');
-
-
-
-	});
-
+	overButton();
 
 }
 //-------Index page ]
@@ -55,7 +34,7 @@ if (window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/index
 
 
 //-------Members Page [
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/members.html' || 'members.html') {
+if(window.location.pathname == '/members.html') {
 
 }
 //-------Members Page ]
@@ -64,7 +43,7 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/member
 
 
 //-------Profile Page [
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/profile.html' || '/profile.html') {
+if(window.location.pathname == '/profile.html') {
 
 }
 //-------Profile Page ]
@@ -73,7 +52,11 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/profil
 
 
 //-------Join Up Page [
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/joinup.html' || '/joinup.html') {
+if(window.location.pathname == '/joinup.html') {
+
+	overButton();
+
+	//[.//Register]
 
 }
 //-------Join Up Page ]
@@ -82,7 +65,7 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/joinup
 
 
 //-------Loadouts Page [
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/loadouts.html' || '/loadouts.html') {
+if(window.location.pathname == '/loadouts.html') {
 
 }
 //-------Loadouts Page ]
@@ -92,7 +75,7 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/loadou
 
 //--------Inventory Page [
 
-if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/inventory.html' || '/inventory.html') {
+if(window.location.pathname == '/inventory.html') {
 
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	const tablinks = document.getElementsByClassName("tablinks");
@@ -136,3 +119,40 @@ if(window.location.pathname == 'https://tracelarson.github.io/IGotYourSix/invent
 	}
  }
 //----TAB CONTROL ]
+
+
+
+
+function overButton() {
+
+	const buttonContainer = document.getElementsByTagName('button');
+
+	for(let i = 0; i < buttonContainer.length; i++) {
+
+		buttonContainer[i].addEventListener('mouseover', () => {
+			if(buttonContainer[i].hasChildNodes()) {
+				let buttonText = buttonContainer[i].getElementsByTagName('span');
+				console.log(buttonText);
+				console.log(buttonText[0].innerHTML);
+				buttonText[0].innerHTML = '<u>[' + buttonText[0].innerHTML + ']</u>';
+				console.log(buttonText[0]);
+			}
+
+		});
+		buttonContainer[i].addEventListener('mouseout', () => {
+			if(buttonContainer[i].hasChildNodes()) {
+				let buttonText = buttonContainer[i].getElementsByTagName('span');
+				if (buttonText[0].innerHTML.includes('[')) {
+					console.log(buttonText);
+					console.log(buttonText[0].innerHTML);
+					buttonText[0].innerHTML = buttonText[0].innerHTML.replace('<u>[', '').replace(']</u>', '');
+					// buttonText[0].innerHTML = buttonText[0].innerHTML.replace(']</u>', '');
+					console.log(buttonText[0].innerHTML);
+					// navButton[0].innerHTML = buttonText;
+
+				}
+			}
+
+		});
+	}
+}

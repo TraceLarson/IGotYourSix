@@ -43,17 +43,98 @@ body{
   background: url('/resources/images/background.jpg') no-repeat center fixed;
 }
 
-.splash{
-  &:nth-child(1){
-    background: url('/resources/buttons/TitanBanner.png') no-repeat center fixed;
-  }
-  &:nth-child(2){
-    background: url('/resources/buttons/HunterBanner.png') no-repeat center fixed;
+.indexButton{
+  width: 100%;
+  font-family: "Helvetica Neue LT Std 45 Light";
+  font-weight: lighter;
+  font-size: 24px;
+  background: none;
+  padding: 0;
+  border: none;
 
-  }
-  &:nth-child(3){
-    background: url('/resources/buttons/WarlockBanner.png') no-repeat center fixed;
 
+  #i-dashboard{
+    border: none;
+    background: url('/resources/buttons/TitanBanner.png')center / cover no-repeat;
+    width: 283px;
+    height: 72px;
+    &:hover{
+      border: 1px solid black;
+    }
+
+    span{
+      color: $text-content-color;
+    }
   }
+
+  #i-joinup{
+    border: none;
+    background: url('/resources/buttons/HunterBanner.png')center / cover no-repeat;
+    width: 283px;
+    height: 72px;
+    &:hover{
+      border: 1px solid black;
+    }
+
+    span{
+      color: $text-content-color;
+    }
+  }
+
+  #i-about{
+    border: none;
+    background: url('/resources/buttons/WarlockBanner.png')center / cover no-repeat;
+    width: 283px;
+    height: 72px;
+    &:hover{
+      border: 1px solid black;
+    }
+
+    span{
+      color: $text-content-color;
+    }
+  }
+
+}
+
+
+
+
+
+//--------------------------------------------------------------------
+
+//                       Join Up Page
+
+//--------------------------------------------------------------------
+
+.title{
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+}
+
+.form-group{
+  color: $text-content-color;
+}
+
+.form-control{
+  font-family: "Futurist Fixed-width";
+  background: $text-content-color;
+  opacity: 0.4;
+  border: 1px solid $text-content-color;
+}
+
+.btn{
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 48px;
+  color: $text-content-color;
+
+  background: transparent;
+  border: none;
+
+  &:hover{
+    background: transparent;
+  }
+
 
 }

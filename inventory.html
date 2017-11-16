@@ -5,16 +5,19 @@
     <title>I Got Your 6</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">I Got Your 6</a></h1>
+    <header class="jumbotron-fluid text-center">
+        <h1><a href="index.html">
+            <span class="text-hide">I Got Your 6</span>
+            <img src="resources/images/logo.png" alt="logo" class="img-fluid">
+        </a></h1>
         <hr>
-        <h2>Inventory</h2>
     </header>
-
+    <h2 class="title">Inventory</h2>
     <main>
         <div class="tab">
             <button class="tablinks" id="gear-button">Gear</button>
@@ -147,8 +150,11 @@
         </ul>
         <p>Powered by the Destiny API</p>
         <p>disclaimer</p>
-        <script type="text/javascript" src="js/content.js"></script>
-    </footer>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/tether.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/content.js"></script>    </footer>
 
 </body>
 </html>

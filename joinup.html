@@ -5,17 +5,101 @@
     <title>I Got Your 6</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">I Got Your 6</a></h1>
-    </header>
+
 
     <main>
         <section>
-            <p>JoinUp</p>
+
+            <div class="container">
+
+                <header class="jumbotron-fluid text-center">
+                    <h1><a href="index.html">
+                        <span class="text-hide">I Got Your 6</span>
+                        <img src="resources/images/logo.png" alt="logo" class="img-fluid">
+                    </a></h1>
+                    <hr>
+                </header>
+
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend class="text-center title">Join Up</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-10 offset-md-1 control-label" for="GamerTag">.//GamerTag</label>
+                            <div class="col-md-10 offset-md-1">
+                                <input id="GamerTag" name="GamerTag" type="text" placeholder="GamerTag"
+                                       class="form-control input-md" required="">
+                                <span class="help-block">Your Xbox Live or PSN gamer tag</span>
+                            </div>
+                        </div> <!--formgroup-->
+
+                        <!-- Email input-->
+                        <div class="form-group">
+                            <label class="col-md-10 offset-md-1 control-label" for="Email">.//Email</label>
+                            <div class="col-md-10 offset-md-1">
+                                <input id="Email" name="Email" type="text" placeholder="You@dot.com"
+                                       class="form-control input-md" required="">
+                                <span class="help-block">Enter a valid email address</span>
+                            </div>
+                        </div> <!--formgroup-->
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-10 offset-md-1 control-label" for="Password">.//Password</label>
+                            <div class="col-md-10 offset-md-1">
+                                <input id="Password" name="Password" type="password" placeholder="*********"
+                                       class="form-control input-md" required="">
+                                <span class="help-block">Choose a Password</span>
+                            </div>
+                        </div> <!--formgroup-->
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-10 offset-md-1 control-label" for="Password ">.//Password (verify)</label>
+                            <div class="col-md-10 offset-md-1">
+                                <input id="Password " name="Password " type="password" placeholder=""
+                                       class="form-control input-md" required="">
+                                <span class="help-block">Verify your password</span>
+                            </div>
+                        </div> <!--formgroup-->
+
+                        <!-- Multiple Checkboxes (inline) -->
+                        <div class="form-group" id="XboxPsn">
+                            <label class=" col-md-10  offset-md-1 control-label" for="XboxPsn">Platform</label>
+                            <div class="col-md-10 offset-md-1">
+                                <label class="checkbox-inline" for="XboxPsn-0">
+                                    .//X-Box
+                                    <input class="d-block" type="radio" name="XboxPsn" id="XboxPsn-0" value="checked">
+                                </label>
+                                <label class="checkbox-inline" for="XboxPsn-1">
+                                    .//PSN
+                                    <input class="d-block" type="radio" name="XboxPsn" id="XboxPsn-1" value="">
+
+                                </label>
+                            </div>
+                        </div> <!--formgroup-->
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-10 offset-md-1 control-label" for="Register"></label>
+                            <div class="col-md-10 offset-md-1 text-center">
+                                <button id="Register" name="Register" class="btn btn-default col-12">
+                                    <span>.//Register</span>
+                                </button>
+                            </div>
+                        </div> <!--formgroup-->
+
+                    </fieldset>
+                </form>
+            </div> <!--container-->
         </section>
     </main>
 
@@ -29,6 +113,10 @@
         </ul>
         <p>Powered by the Destiny API</p>
         <p>disclaimer</p>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/tether.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/content.js"></script>
     </footer>
 
