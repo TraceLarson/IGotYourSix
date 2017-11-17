@@ -21,6 +21,11 @@ body {
 button {
   color: #F3F0ED; }
 
+a {
+  color: #F3F0ED; }
+  a:hover {
+    color: #F3F0ED; }
+
 .indexButton {
   width: 100%;
   font-family: "Helvetica Neue LT Std 45 Light";
@@ -74,3 +79,13 @@ button {
   border: none; }
   .btn:hover {
     background: transparent; }
+
+footer {
+  font-family: "Helvetica Neue LT Std 45 Light";
+  font-size: 1rem;
+  border-top: 5px solid red;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(grey));
+  background-image: linear-gradient(90deg, black, grey); }
+
+.test {
+  border: 1px solid green; }

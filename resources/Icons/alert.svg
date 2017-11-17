@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.683197464">
+        <g id="footer" transform="translate(-21.000000, -25.000000)">
+            <g id="alert">
+                <g transform="translate(21.000000, 25.000000)">
+                    <path d="M24.2558407,31.4217488 L24.2558407,36.9927431 L29.9402877,36.9927431 L29.9402877,31.4217488 L24.2558407,31.4217488 Z M29.7592544,18.109243 L29.7592544,11.1635878 L24.4006674,11.1635878 L24.4006674,18.109243 L25.7765208,29.2512316 L28.3471943,29.2512316 L29.7592544,18.109243 Z" id="!" fill="#D0011B"></path>
+                    <rect id="Rectangle-9" stroke="#D0011B" transform="translate(26.740157, 26.716981) rotate(45.000000) translate(-26.740157, -26.716981) " x="8.72774076" y="8.72060958" width="36.0248334" height="35.9927431"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
