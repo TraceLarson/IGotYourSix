@@ -27,44 +27,66 @@ if (window.location.pathname == '/index.html') {
 	overButton();
 
 }
-//-------Index page ]
+//------------------------------------END]
+
+//-------Dashboard page [
+if (window.location.pathname == '/dashboard.html'){
+	overButton();
+}
+
+//------------------------------------END]
+
 
 
 //-------Members Page [
 if (window.location.pathname == '/members.html') {
 
 }
-//-------Members Page ]
+//------------------------------------END]
+
+
 
 
 //-------Profile Page [
 if (window.location.pathname == '/profile.html') {
 
 }
-//-------Profile Page ]
+//------------------------------------END]
+
+
 
 
 //-------Join Up Page [
 if (window.location.pathname == '/joinup.html') {
 
 	overButton();
+	const regButton = document.getElementById('register');
 
-	//[.//Register]
+	regButton.addEventListener('click',  (event) => {
+		event.preventDefault();
+		alert('hello world');
 
+	})
 }
-//-------Join Up Page ]
+//------------------------------------END]
+
+
+
+
 
 
 //-------Loadouts Page [
 if (window.location.pathname == '/loadouts.html') {
 
 }
-//-------Loadouts Page ]
+//------------------------------------END]
+
 
 
 //--------Inventory Page [
-
 if (window.location.pathname == '/inventory.html') {
+
+	overButton();
 
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	const tablinks = document.getElementsByClassName("tablinks");
@@ -108,7 +130,7 @@ if (window.location.pathname == '/inventory.html') {
 	}
 }
 
-//----TAB CONTROL ]
+//------------------------------------END]
 
 
 function overButton() {
@@ -117,14 +139,14 @@ function overButton() {
 
 	for (let i = 0; i < button.length; i++) {
 
-		button[i].addEventListener('mouseover', () => {
+		button[i].addEventListener('mouseenter', () => {
 
 			let buttonText = button[i].innerHTML;
 			console.log(buttonText);
 			button[i].innerHTML = '<u>[' + buttonText + ']</u>';
 			console.log(buttonText);
 		});
-		button[i].addEventListener('mouseout', () => {
+		button[i].addEventListener('mouseleave', () => {
 
 			let buttonText = button[i].innerHTML;
 

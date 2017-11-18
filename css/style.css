@@ -15,7 +15,7 @@
   src: url("../fonts/AGaramondPro-Italic.woff") format("woff"); }
 
 body {
-  background: url("/resources/images/background.jpg") no-repeat center fixed;
+  background: url("/resources/images/background.jpg") repeat center fixed;
   color: #F3F0ED; }
 
 button {
@@ -25,6 +25,24 @@ a {
   color: #F3F0ED; }
   a:hover {
     color: #F3F0ED; }
+
+hr {
+  border: 0.25px solid #504E4C; }
+
+h3 {
+  font-family: "Helvetica Neue";
+  color: #504E4C;
+  width: 200px;
+  height: 50px;
+  position: relative; }
+  h3:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    right: 0px;
+    border: 2px solid #504E4C; }
 
 .indexButton {
   width: 100%;
@@ -57,9 +75,18 @@ a {
     .indexButton #i-about:hover {
       border: 1px solid black; }
 
+.splash {
+  background: none;
+  font-family: "Futurist Fixed-width"; }
+
+@media (min-width: 768px) {
+  .splash {
+    background: url("/resources/images/splash_image1.jpg") right/cover no-repeat; } }
+
 .title {
   font-family: "Helvetica Neue";
-  font-weight: lighter; }
+  font-weight: lighter;
+  color: #504E4C; }
 
 .form-group {
   color: #F3F0ED; }
@@ -83,9 +110,21 @@ a {
 footer {
   font-family: "Helvetica Neue LT Std 45 Light";
   font-size: 1rem;
-  border-top: 5px solid red;
+  border-top: 5px solid #AA6B66;
   background-image: -webkit-gradient(linear, left top, right top, from(black), to(grey));
   background-image: linear-gradient(90deg, black, grey); }
 
+.alert {
+  background: -webkit-gradient(linear, left top, right top, from(grey), to(black));
+  background: linear-gradient(90deg, grey, black);
+  border-radius: 0;
+  border: 0; }
+
+.invBtn {
+  font-size: 1.5rem; }
+
 .test {
   border: 1px solid green; }
+
+.test2 {
+  border: 1px solid red; }

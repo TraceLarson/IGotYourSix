@@ -10,136 +10,437 @@
 </head>
 
 <body>
-    <header class="jumbotron-fluid text-center">
-        <h1><a href="index.html">
-            <span class="text-hide">I Got Your 6</span>
-            <img src="resources/images/logo.png" alt="logo" class="img-fluid">
-        </a></h1>
-        <hr>
-    </header>
-    <h2 class="title">Inventory</h2>
-    <main>
-        <div class="tab">
-            <button class="tablinks" id="gear-button">Gear</button>
-            <button class="tablinks" id="inventory-button">Inventory</button>
-            <button class="tablinks" id="storage-button">Storage</button>
-        </div>
-        <section id="gear-tab" class="tabcontent">
-            <!--<ul id="gear">-->
-            <ul>
-                <li>
-                    <ul id="weapons">
-                        <li>
-                            <h3>Kinetic</h3>
-                            <ul id="kinetic"></ul>
-                        </li>
-                        <li>
-                            <h3>Energy</h3>
-                            <ul id="energy"></ul>
-                        </li>
-                        <li>
-                            <h3>Power</h3>
-                            <ul id="power"></ul>
-                        </li>
-                        <li>
-                            <h3>Ghost</h3>
-                            <ul id="ghost"></ul>
-                        </li>
-                    </ul>
-                </li>
-                <hr>
-                <li>
-                    <ul id="armor">
-                        <li>
-                            <h3>Helmet</h3>
-                            <ul id="helmet"></ul>
-                        </li>
-                        <li>
-                            <h3>Gauntlets</h3>
-                            <ul id="gauntlets"></ul>
-                        </li>
-                        <li>
-                            <h3>Chest</h3>
-                            <ul id="chest"></ul>
-                        </li>
-                        <li>
-                            <h3>Legs</h3>
-                            <ul id="legs"></ul>
-                        </li>
-                        <li>
-                            <h3>Back</h3>
-                            <ul id="back"></ul>
-                        </li>
-                        <li>
-                            <h3>Clan Banner</h3>
-                            <ul id="banner"></ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <div class="container">
+        <header class="jumbotron-fluid text-center">
+            <h1>
+                <a href="index.html">
+                    <span class="text-hide">I Got Your 6</span>
+                    <img src="resources/images/logo.png" alt="logo" class="img-fluid">
+                </a>
+            </h1>
+            <hr>
+            <h2 class="title">Inventory</h2>
+        </header>
+        <main class="container text-center">
+            <div class="tab">
+                <button class="tablinks btn invBtn" id="gear-button">.//Gear</button>
+                <button class="tablinks btn invBtn" id="inventory-button">.//Inventory</button>
+                <button class="tablinks btn invBtn" id="storage-button">.//Storage</button>
+            </div>
+            <section id="gear-tab" class="tabcontent">
+                <!--<ul class=list-group id="gear">-->
+                <ul class="list-group">
+                    <li class="list-group-item bg-transparent border-0">
+                        <ul class="list-group" class="list-group" id="weapons">
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Kinetic
+                                </h3>
+                                <ul class="list-inline" id="kinetic">
+                                    <li class="list-inline-item bg-transparent border-0">
 
-        <section id="inventory-tab" class="tabcontent">
-            <!--<ul id="inventory">-->
-            <ul>
-                <li>
-                    <h3>Engrams</h3>
-                    <ul id="engrams"></ul>
-                </li>
-                <li>
-                    <h3>Lost Items</h3>
-                    <ul id="lost-items"></ul>
-                </li>
-                <li>
-                    <h3>Consumables</h3>
-                    <ul id="consumables"></ul>
-                </li>
-                <li>
-                    <h3>Modifications</h3>
-                    <ul id="modifications"></ul>
-                </li>
-                <li>
-                    <h3>Shaders</h3>
-                    <ul id="shaders"></ul>
-                </li>
-                <li>
-                    <h3>Emblems</h3>
-                    <ul id="emblems"></ul>
-                </li>
-                <li>
-                    <h3>Auras</h3>
-                    <ul id="auras"></ul>
-                </li>
-                <li>
-                    <h3>Emotes</h3>
-                    <ul id="emotes"></ul>
-                </li>
-                <li>
-                    <h3>Ships</h3>
-                    <ul id="ships"></ul>
-                </li>
-                <li>
-                    <h3>Vehicles</h3>
-                    <ul id="vehicles"></ul>
-                </li>
-            </ul>
-        </section>
+                                        <img src="resources/Icons/kinetic.png" height="104" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
 
-        <section id="storage-tab" class="tabcontent">
-            <!--<ul id="storage">-->
-            <ul>
-                <li>
-                    <h3>Vault</h3>
-                    <ul id="vault"></ul>
-                </li>
-                <li>
-                    <h3>Collections</h3>
-                    <ul id="collections"></ul>
-                </li>
-            </ul>
-        </section>
-    </main>
+                                        <img src="resources/Icons/kineticGrey.png" height="82" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
 
+                                        <img src="resources/Icons/kineticGrey.png" height="82" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/kineticGrey.png" height="82" width="83"/>
+                                    </li>
+                                </ul>  <!--KINETIC WEAPONS-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Energy
+                                </h3>
+                                <ul class="list-inline" id="energy">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/energy_weapon_gold.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/energy_weaponGrey.png" height="83" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/energy_weaponGrey.png" height="83" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/energy_weaponGrey.png" height="83" width="83"/>
+                                    </li>
+                                </ul> <!--ENERGY WEAPONS-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Power
+                                </h3>
+                                <ul class="list-inline" id="power">
+                                    <li class="list-inline-item bg-transparent border-0">
+                                        <img src="resources/Icons/powerweapon.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+                                        <img src="resources/Icons/powerweaponGrey.png" height="83" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+                                        <img src="resources/Icons/powerweaponGrey.png" height="83" width="83"/>
+                                    </li>
+                                </ul> <!--POWER WEAPONS-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Ghost
+                                </h3>
+                                <ul class="list-inline" id="ghost">
+                                    <li class="list-inline-item bg-transparent border-0">
+                                        <img src="resources/Icons/ghost.png" height="104" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/ghostGrey.png" height="83" width="83"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+                                        <img src="resources/Icons/ghostGrey.png" height="83" width="83"/>
+                                    </li>
+                                </ul> <!--GHOST-->
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="list-group-item bg-transparent border-0">
+                        <ul class="list-group" class="list-group" id="armor">
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Helmet
+                                </h3>
+                                <ul class="list-inline"  id="helmet">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_helmet.png" height="104" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_helmetGrey.png" height="81" width="82"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_helmetGrey.png" height="81" width="82"/>
+                                    </li>
+                                </ul>  <!--ARMOR HELMET-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Gauntlets
+                                </h3>
+                                <ul class="list-inline"  id="gauntlets">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_gauntlets.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_gauntletsGrey.png" height="82" width="82"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_gauntletsGrey.png" height="82" width="82"/>
+                                    </li>
+                                </ul>  <!--ARMOR GAUNTLETS-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Chest
+                                </h3>
+                                <ul class="list-inline"  id="chest">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_chest.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_chestGrey.png" height="82" width="82"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_chestGrey.png" height="82" width="82"/>
+                                    </li>
+                                </ul>  <!--ARMOR CHEST-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Legs
+                                </h3>
+                                <ul class="list-inline"  id="legs">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_boots.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_bootsGrey.png" height="82" width="82"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_bootsGrey.png" height="82" width="82"/>
+                                    </li>
+                                </ul>  <!--ARMOR LEGS-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Back
+                                </h3>
+                                <ul class="list-inline"  id="back">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_cloak.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_cloak.png" height="105" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_cloak.png" height="105" width="104"/>
+                                    </li>
+                                </ul>  <!--ARMOR BACK-->
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <h3 class="title d-inline-flex justify-content-end">
+                                    Clan Banner
+                                </h3>
+                                <ul class="list-inline"  id="banner">
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_clanbanner.png" height="104" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_clanbanner.png" height="104" width="104"/>
+                                    </li>
+                                    <li class="list-inline-item bg-transparent border-0">
+
+                                        <img src="resources/Icons/armor_clanbanner.png" height="104" width="104"/>
+                                    </li>
+                                </ul>  <!--ARMOR BANNER-->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="inventory-tab" class="tabcontent">
+                <!--<ul class=list-group id="inventory">-->
+                <ul class="list-group">
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Engrams
+                        </h3>
+                        <ul class="list-inline"  id="engrams">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY ENGRAMS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Lost Items
+                        </h3>
+                        <ul class="list-inline"  id="lost-items">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY LOST ITEMS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Consumables
+                        </h3>
+                        <ul class="list-inline"  id="consumables">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul> <!--INVENTORY CONSUMABLES-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Modifications
+                        </h3>
+                        <ul class="list-inline"  id="modifications">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul> <!--INVENTORY MODS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Shaders
+                        </h3>
+                        <ul class="list-inline"  id="shaders">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY SHADERS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Emblems
+                        </h3>
+                        <ul class="list-inline"  id="emblems">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY EMBLEMS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Auras
+                        </h3>
+                        <ul class="list-inline"  id="auras">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY AURAS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Emotes
+                        </h3>
+                        <ul class="list-inline"  id="emotes">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY EMOTES-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Ships
+                        </h3>
+                        <ul class="list-inline"  id="ships">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY SHIPS-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Vehicles
+                        </h3>
+                        <ul class="list-inline"  id="vehicles">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul>  <!--INVENTORY VEHICLES-->
+                    </li>
+                </ul>
+            </section>
+
+            <section id="storage-tab" class="tabcontent">
+                <!--<ul class=list-group id="storage">-->
+                <ul class="list-group">
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Vault
+                        </h3>
+                        <ul class="list-inline"  id="vault">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul> <!--STORAGE VAULT-->
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                        <h3 class="title d-inline-flex justify-content-end">
+                            Collections
+                        </h3>
+                        <ul class="list-inline"  id="collections">
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                            <li class="list-inline-item bg-transparent border-0">
+
+                            </li>
+                        </ul> <!--STORAGE COLLECTIONS-->
+                    </li>
+                </ul>
+            </section>
+            </section>
+        </main>
+    </div>
     <footer class="container-fluid">
         <div class="row text-center m-0 ">
 
@@ -149,14 +450,14 @@
                     <img src="resources/icons/alert.png" alt="alert" class="mt-5">
                 </div> <!--alert image-->
 
-                <div class="col-8 mb-3" >
+                <div class="col-8 mb-3">
                     <h2 class="text-hide">I Got Your 6</h2>
                     <img src="resources/images/logo.png" alt="logo" class="img-fluid mt-2 mb-2 col-md-8">
-                    <ul class="list-inline mb-4">
-                        <li class="list-inline-item mr-md-4"><a href="dashboard.html">Dashboard</a></li>
-                        <li class="list-inline-item mr-md-4"><a href="loadouts.html">Loadouts</a></li>
-                        <li class="list-inline-item mr-md-4"><a href="profile.html">Profile</a></li>
-                        <li class="list-inline-item"><a href="">Contact</a></li>
+                    <ul  class="list-inline mb-4">
+                        <li class class="list-inline-item mr-md-4"><a href="dashboard.html">Dashboard</a></li>
+                        <li class class="list-inline-item mr-md-4"><a href="loadouts.html">Loadouts</a></li>
+                        <li class class="list-inline-item mr-md-4"><a href="profile.html">Profile</a></li>
+                        <li class class="list-inline-item"><a href="">Contact</a></li>
                     </ul>
 
                     <p class="mb-0">Powered by the Destiny API</p>

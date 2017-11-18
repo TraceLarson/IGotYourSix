@@ -40,7 +40,7 @@
 
 
 body{
-  background: url('/resources/images/background.jpg') no-repeat center fixed;
+  background: url('/resources/images/background.jpg') repeat center fixed;
   color: $text-content-color;
 }
 
@@ -53,6 +53,32 @@ a{
   color: $text-content-color;
   &:hover{
     color: $text-content-color;
+  }
+}
+
+hr{
+  border: 0.25px solid $text-title-color;
+}
+
+h3{
+  font-family: "Helvetica Neue";
+  color: $text-title-color;
+  width: 200px;
+  height: 50px;
+  //border: 2px solid $text-title-color;
+  position: relative;
+
+
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    right: 0px;
+    border: 2px solid $text-title-color;
+
   }
 }
 
@@ -106,6 +132,19 @@ a{
   }
 
 }
+.splash{
+  background: none;
+
+  font-family: "Futurist Fixed-width";
+}
+
+@media (min-width: 768px){
+  .splash{
+    background: url('/resources/images/splash_image1.jpg') right / cover no-repeat;
+
+  }
+}
+
 
 
 
@@ -120,6 +159,7 @@ a{
 .title{
   font-family: "Helvetica Neue";
   font-weight: lighter;
+  color: $text-title-color;
 }
 
 .form-group{
@@ -149,6 +189,15 @@ a{
 }
 
 
+//--------------------------------------------------------------------
+
+//                       Dashboard Page
+
+//--------------------------------------------------------------------
+
+
+
+
 
 
 //--------------------------------------------------------------------
@@ -161,14 +210,41 @@ footer{
   font-family: "Helvetica Neue LT Std 45 Light";
   font-size: 1rem;
 
-  border-top: 5px solid red;
+  border-top: 5px solid $content-red-color;
   background-image: linear-gradient(90deg, black, grey);
 
 }
+.alert{
+  background: linear-gradient(90deg, grey, black);
+  border-radius: 0;
+  border: 0;
+
+}
+
+
+
+
+//--------------------------------------------------------------------
+
+//                       Inventory Page
+
+//--------------------------------------------------------------------
+
+.invBtn{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
 .test{
   border: 1px solid green;
 }
 
-.navbar{
-
+.test2{
+  border: 1px solid red;
 }
+
+
