@@ -78,6 +78,12 @@ if (window.location.pathname == '/joinup.html') {
 //-------Loadouts Page [
 if (window.location.pathname == '/loadouts.html') {
 
+	overButton();
+
+	activateLoadout();
+
+
+
 }
 //------------------------------------END]
 
@@ -142,19 +148,39 @@ function overButton() {
 		button[i].addEventListener('mouseenter', () => {
 
 			let buttonText = button[i].innerHTML;
-			console.log(buttonText);
+			// console.log(buttonText);
 			button[i].innerHTML = '<u>[' + buttonText + ']</u>';
-			console.log(buttonText);
+			// console.log(buttonText);
 		});
 		button[i].addEventListener('mouseleave', () => {
 
 			let buttonText = button[i].innerHTML;
 
 			if (buttonText.includes('[')) {
-				console.log(buttonText);
+				// console.log(buttonText);
 				button[i].innerHTML = button[i].innerHTML.replace('<u>[', '').replace(']</u>', '');
-				console.log(button[i].innerHTML);
+				// console.log(button[i].innerHTML);
 			}
 		});
+	}
+}
+
+
+
+function activateLoadout(){
+
+	const loadoutButtons = document.getElementsByTagName('button');
+
+	for(let i = 0; i < loadoutButtons.length; i++){
+
+		loadoutButtons[i].addEventListener('click', () =>{
+			for(let i = 0; i < loadoutButtons.length; i++) {
+				if (loadoutButtons[i].className == 'activeLoadout') {
+					loadoutButtons[i].setAttribute('class', 'inactiveLoadout');
+				}
+			}
+			loadoutButtons[i].setAttribute('class', 'activeLoadout');
+		});
+
 	}
 }

@@ -123,6 +123,43 @@ footer {
 .invBtn {
   font-size: 1.5rem; }
 
+.indexButton {
+  width: 100%;
+  font-family: "Helvetica Neue LT Std 45 Light";
+  font-weight: lighter;
+  font-size: 24px;
+  background: none;
+  padding: 0;
+  border: none; }
+  .indexButton .inactiveLoadout {
+    border: none;
+    background: url("/resources/Icons/inactiveLoadout.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px;
+    color: #F3F0ED; }
+    .indexButton .inactiveLoadout:hover {
+      border: 1px solid black;
+      background: url("/resources/Icons/activeLoadout.png") center/cover no-repeat; }
+  .indexButton .activeLoadout {
+    border: none;
+    background: url("/resources/Icons/activeLoadout.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px;
+    color: #F3F0ED; }
+    .indexButton .activeLoadout:hover {
+      border: 1px solid black;
+      background: url("/resources/Icons/activeLoadout.png") center/cover no-repeat; }
+  .indexButton #loadout-create {
+    border: none;
+    background: url("/resources/Icons/CreateNewLoadout.png") center/cover no-repeat;
+    width: 283px;
+    height: 72px; }
+    .indexButton #loadout-create:hover {
+      border: 1px solid black; }
+
+.activeLoadout {
+  background: url("/resources/Icons/activeLoadout.png") center/cover no-repeat; }
+
 .test {
   border: 1px solid green; }
 
